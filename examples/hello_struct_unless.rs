@@ -10,6 +10,7 @@ fn main () {
         name: String,
         age: u32
     };
+    hello_struct_unless("hello".into());
     hello_struct_unless(Tuple(0,0)).expect("Error!");
     hello_struct_unless(Person{name: String::from("Aagam"), age: 20}).expect("Error!");
     hello_struct_unless("hello").expect("Error!"); // errors!
